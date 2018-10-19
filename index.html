@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" /
+		<title>万圣节抽符</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript">
+			
+			function showpage(num)
+			{
+				document.getElementById("page1").style.display= "none";
+				document.getElementById("page2").style.display= "none";
+				document.getElementById("page3").style.display= "none";
+				document.getElementById("page4").style.display= "none";
+				if(num==2)
+				{
+					document.getElementById("page2").style.display="block";
+				}
+				else if(num==3){
+							document.getElementById("page3").style.display="block";
+			
+				}
+				else if(num==4){
+							document.getElementById("page4").style.display="block";
+			
+				}
+				
+			}
+			function show(num)
+			{
+				//隐藏第三页
+				document.getElementById("page3").style.display="none";
+				//显示第四页
+				document.getElementById("page4").style.display="block";
+				//根据num还背景图
+				if(num==1){
+					//js操作css样式的时候，backg-image转换为backgroundImage
+					document.getElementById("page4").style.backgroundImage="url(img/charm1.jpg)"
+				}
+				else if(num==2){
+					document.getElementById("page4").style.backgroundImage="url(img/charm2.jpg)"
+				}
+				else if(num==3){
+					document.getElementById("page4").style.backgroundImage="url(img/charm3.jpg)"
+				}
+				else if(num==4){
+					document.getElementById("page4").style.backgroundImage="url(img/charm4.jpg)"
+				}
+				else if(num==5){
+					document.getElementById("page4").style.backgroundImage="url(img/charm5.jpg)"
+				}
+				else if(num==6){
+					document.getElementById("page4").style.backgroundImage="url(img/charm6.jpg)"
+				}
+				else if(num==7){
+					document.getElementById("page4").style.backgroundImage="url(img/charm7.jpg)"
+				}
+			}
+		</script>	
+		
+	</head>
+	<body>
+		
+        <audio src="audio/AKB48.mp3" autoplay="autoplay"></audio>
+        <div id="page1">
+        	<img  id="title" src="img/title.png"  />
+        	<img id="box" onclick="showpage(2);"  src="img/box.png" />
+        </div>
+        <div id="page2">
+        	<img id="pumpkin" src="img/pumpkin.png" />
+        	<img id="startGame" src="img/startGame.jpg"  onclick="showpage(3);"/>
+        </div>
+        <div id="page3">
+        	<img  id="png1" src="img/1.png" onclick="show(1);"/>
+        	<img id="png2" src="img/2.png" onclick="show(2);"/>
+        	<img id="png3" src="img/3.png" onclick="show(3);"/>
+        	<img id="png4" src="img/4.png" onclick="show(4);"/>
+        	<img id="png5" src="img/5.png" onclick="show(5);"/>
+        	<img id="png6" src="img/6.png" onclick="show(6);"/>
+        	<img id="png7" src="img/7.png" onclick="show(7);"/>
+        </div>
+        <div id="page4">
+        	<img src="img/back.png" onclick="showpage(3)" />
+        	
+        </div>
+	</body>
+	
+</html>

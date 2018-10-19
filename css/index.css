@@ -1,0 +1,253 @@
+html
+{
+	height: 100%;
+}
+body
+{
+	height: 100%;
+}
+div
+{
+	height: 100%;
+}
+
+#page1
+{ 
+	background-image: url(../img/halloween1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+	
+#title
+{
+	position: fixed;
+	top: 50px;
+	left: 350px;
+	animation: mymove1 3s;
+}
+@keyframes mymove1 {
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+#box
+{
+	position: fixed;
+	bottom: 250px;
+	left: 300px;
+	animation: mymove2 2s infinite/*无限的*/;
+}
+@keyframes mymove2{
+	0%{
+		left: 300px;
+	}
+	50%{
+		left: 320px;
+	}
+	100%{
+		left: 300px;
+	}
+}
+	#page2
+{ 
+	background-image: url(../img/halloween2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+display: none;
+	
+	}
+	#pumpkin
+	{
+		position: fixed;
+		top: 50px;
+		left: 280px;
+	}
+	#startGame
+	{
+		position: fixed;
+		bottom: 250px;
+		left: 380px;
+	}
+
+	#page3
+{ 
+	background-image: url(../img/halloweenMain.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    display: none;
+	
+	}
+	#png1{
+		position: fixed;
+		left: 50px;
+		top: 100px;
+		animation: move1 5s infinite;
+		
+	}
+	@keyframes move1{
+	0%{
+		left: 50px;
+		top: 100px;
+	}
+	30%{
+		left: 50px;
+		top: 200px;
+	}
+	60%{
+		left: 100px;
+		top: 150px;
+	}
+	100%{
+		lleft: 50px;
+		top: 100px;
+	}
+}
+	#png2{
+		position: fixed;
+		left: 250px;
+		top: 400px;
+		animation: move2 10s infinite;
+	}
+	@keyframes move2{
+		0%{
+		left: 250px;
+		top: 400px;
+	}
+	30%{
+		left: 300px;
+		top: 400px;
+	}
+	60%{
+		left: 350px;
+		top: 400px;
+	}
+	100%{
+		left: 250px;
+		top: 400px;
+	}
+	}
+	#png3{
+		position: fixed;
+		left: 50px;
+		top: 650px;
+		animation: move3 15s infinite;
+	}
+	@keyframes move3{
+		0%{
+		left: 50px;
+		top: 650px;
+	}
+	50%{
+		left: 500px;
+		top: 750px;
+	}
+	
+	100%{
+		left: 50px;
+		top: 650px;
+	}
+	}
+	#png4{
+		position: fixed;
+		left: 500px;
+		top: 50px;
+		animation: move4 10s infinite;
+	}
+	@keyframes move4{
+		0%{
+		left: 500px;
+		top: 50px;
+	}
+	10%{
+		left: 650px;
+		top: 100px;
+	}
+	50%{
+		left: 650px;
+		top: 650px;
+	}
+	90%{
+		left: 650px;
+		top: 100px;
+	}
+	100%{
+		left: 500px;
+		top: 50px;
+	}
+	
+	}
+	
+	#png5{
+		position: fixed;
+		left: 400px;
+		top: 900px;
+		animation: move5 5s infinite;
+	}
+	@keyframes move5{
+		0%{
+		left: 400px;
+		top: 900px;
+	}
+	50%{
+		left: 400px;
+		top: 1000px;
+	}
+	
+	100%{
+		left: 400px;
+		top: 900px;
+	}
+	}
+	#png6{
+		position: fixed;
+		left: 300px;
+		top: 800px;
+		animation: move6 10s infinite;
+	}
+	@keyframes move6{
+		0%{
+		left: 300px;
+		top: 800px;
+	}
+	50%{
+		left: 300px;
+		top: 100px;
+	}
+	
+	100%{
+		left: 300px;
+		top: 800px;
+	}
+	}
+	#png7{
+		position: fixed;
+		right: 50px;
+		bottom: 300px;
+		animation: move7 3s infinite;
+		
+	}
+	@keyframes move7{
+		from{
+			width: 100px;
+			height: 100px;
+		}
+		to{
+			width: 20px;
+			height: 20px;
+		}
+	}
+	//注意相对路径,../代表到上级目录
+	#page4
+{ 
+	background-image: url(../img/charm5.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: none;
+	}
+
